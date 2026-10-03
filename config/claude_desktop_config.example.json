@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "freshdesk-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://therapro.freshdesk.com/mcp",
+        "--header",
+        "Authorization:${FRESHDESK_API_KEY}"
+      ],
+      "env": {
+        "FRESHDESK_API_KEY": "<API_KEY>"
+      }
+    }
+  }
+}
